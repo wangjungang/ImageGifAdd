@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		533D6D1B1F63D4E000655B83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 533D6D1A1F63D4E000655B83 /* main.m */; };
+		533D6D1E1F63D4E000655B83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 533D6D1D1F63D4E000655B83 /* AppDelegate.m */; };
+		533D6D211F63D4E000655B83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533D6D201F63D4E000655B83 /* ViewController.m */; };
+		533D6D241F63D4E000655B83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533D6D221F63D4E000655B83 /* Main.storyboard */; };
+		533D6D261F63D4E000655B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533D6D251F63D4E000655B83 /* Assets.xcassets */; };
+		533D6D291F63D4E000655B83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533D6D271F63D4E000655B83 /* LaunchScreen.storyboard */; };
+		533D6D331F63D5F500655B83 /* gifCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 533D6D311F63D5F500655B83 /* gifCell.m */; };
+		533D6D341F63D5F500655B83 /* gifCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 533D6D321F63D5F500655B83 /* gifCell.xib */; };
+		533D6D3B1F65865F00655B83 /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533D6D3A1F65865F00655B83 /* secondViewController.m */; };
+		533D6D481F65883800655B83 /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 533D6D3F1F65883800655B83 /* GCDGroup.m */; };
+		533D6D491F65883800655B83 /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 533D6D411F65883800655B83 /* GCDQueue.m */; };
+		533D6D4A1F65883800655B83 /* GCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 533D6D431F65883800655B83 /* GCDSemaphore.m */; };
+		533D6D4B1F65883800655B83 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 533D6D451F65883800655B83 /* GCDTimer.m */; };
+		533D6D4C1F65883800655B83 /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 533D6D471F65883800655B83 /* UIView+SetRect.m */; };
+		533D6D4F1F6589C500655B83 /* thirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533D6D4E1F6589C500655B83 /* thirdViewController.m */; };
+		533D6D551F6630D200655B83 /* LLGifImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 533D6D521F6630D200655B83 /* LLGifImageView.m */; };
+		533D6D561F6630D200655B83 /* LLGifView.m in Sources */ = {isa = PBXBuildFile; fileRef = 533D6D541F6630D200655B83 /* LLGifView.m */; };
+		533D6D591F6632C600655B83 /* 888.gif in Resources */ = {isa = PBXBuildFile; fileRef = 533D6D571F6632C600655B83 /* 888.gif */; };
+		533D6D5A1F6632C600655B83 /* example.gif in Resources */ = {isa = PBXBuildFile; fileRef = 533D6D581F6632C600655B83 /* example.gif */; };
+		D6C62AF2F134CDFFF3CFA2DD /* libPods-ImageGifAdd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CDAEA6244F9A9A3C285856 /* libPods-ImageGifAdd.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		44C6B4FD11AB527615A01610 /* Pods-ImageGifAdd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGifAdd.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGifAdd/Pods-ImageGifAdd.release.xcconfig"; sourceTree = "<group>"; };
+		533D6D161F63D4E000655B83 /* ImageGifAdd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageGifAdd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		533D6D1A1F63D4E000655B83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		533D6D1C1F63D4E000655B83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		533D6D1D1F63D4E000655B83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		533D6D1F1F63D4E000655B83 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		533D6D201F63D4E000655B83 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		533D6D231F63D4E000655B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		533D6D251F63D4E000655B83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		533D6D281F63D4E000655B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		533D6D2A1F63D4E000655B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		533D6D301F63D5F500655B83 /* gifCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gifCell.h; sourceTree = "<group>"; };
+		533D6D311F63D5F500655B83 /* gifCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gifCell.m; sourceTree = "<group>"; };
+		533D6D321F63D5F500655B83 /* gifCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = gifCell.xib; sourceTree = "<group>"; };
+		533D6D391F65865F00655B83 /* secondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondViewController.h; sourceTree = "<group>"; };
+		533D6D3A1F65865F00655B83 /* secondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondViewController.m; sourceTree = "<group>"; };
+		533D6D3D1F65883800655B83 /* GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCD.h; sourceTree = "<group>"; };
+		533D6D3E1F65883800655B83 /* GCDGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDGroup.h; sourceTree = "<group>"; };
+		533D6D3F1F65883800655B83 /* GCDGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDGroup.m; sourceTree = "<group>"; };
+		533D6D401F65883800655B83 /* GCDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDQueue.h; sourceTree = "<group>"; };
+		533D6D411F65883800655B83 /* GCDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDQueue.m; sourceTree = "<group>"; };
+		533D6D421F65883800655B83 /* GCDSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSemaphore.h; sourceTree = "<group>"; };
+		533D6D431F65883800655B83 /* GCDSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSemaphore.m; sourceTree = "<group>"; };
+		533D6D441F65883800655B83 /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
+		533D6D451F65883800655B83 /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
+		533D6D461F65883800655B83 /* UIView+SetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SetRect.h"; sourceTree = "<group>"; };
+		533D6D471F65883800655B83 /* UIView+SetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SetRect.m"; sourceTree = "<group>"; };
+		533D6D4D1F6589C500655B83 /* thirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thirdViewController.h; sourceTree = "<group>"; };
+		533D6D4E1F6589C500655B83 /* thirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thirdViewController.m; sourceTree = "<group>"; };
+		533D6D511F6630D200655B83 /* LLGifImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLGifImageView.h; sourceTree = "<group>"; };
+		533D6D521F6630D200655B83 /* LLGifImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLGifImageView.m; sourceTree = "<group>"; };
+		533D6D531F6630D200655B83 /* LLGifView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLGifView.h; sourceTree = "<group>"; };
+		533D6D541F6630D200655B83 /* LLGifView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLGifView.m; sourceTree = "<group>"; };
+		533D6D571F6632C600655B83 /* 888.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 888.gif; sourceTree = "<group>"; };
+		533D6D581F6632C600655B83 /* example.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = example.gif; sourceTree = "<group>"; };
+		BAA1FA2B002EA64F9A0F65FE /* Pods-ImageGifAdd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGifAdd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGifAdd/Pods-ImageGifAdd.debug.xcconfig"; sourceTree = "<group>"; };
+		C0CDAEA6244F9A9A3C285856 /* libPods-ImageGifAdd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImageGifAdd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		533D6D131F63D4E000655B83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C62AF2F134CDFFF3CFA2DD /* libPods-ImageGifAdd.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		533D6D0D1F63D4E000655B83 = {
+			isa = PBXGroup;
+			children = (
+				533D6D181F63D4E000655B83 /* ImageGifAdd */,
+				533D6D171F63D4E000655B83 /* Products */,
+				99F77C3A7B2090FC08AC85AD /* Pods */,
+				E4C81B4C23F11F1792D59978 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		533D6D171F63D4E000655B83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				533D6D161F63D4E000655B83 /* ImageGifAdd.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		533D6D181F63D4E000655B83 /* ImageGifAdd */ = {
+			isa = PBXGroup;
+			children = (
+				533D6D571F6632C600655B83 /* 888.gif */,
+				533D6D581F6632C600655B83 /* example.gif */,
+				533D6D1C1F63D4E000655B83 /* AppDelegate.h */,
+				533D6D1D1F63D4E000655B83 /* AppDelegate.m */,
+				533D6D1F1F63D4E000655B83 /* ViewController.h */,
+				533D6D201F63D4E000655B83 /* ViewController.m */,
+				533D6D391F65865F00655B83 /* secondViewController.h */,
+				533D6D3A1F65865F00655B83 /* secondViewController.m */,
+				533D6D4D1F6589C500655B83 /* thirdViewController.h */,
+				533D6D4E1F6589C500655B83 /* thirdViewController.m */,
+				533D6D501F6630D200655B83 /* LLGifView */,
+				533D6D3C1F65883800655B83 /* GCD */,
+				533D6D461F65883800655B83 /* UIView+SetRect.h */,
+				533D6D471F65883800655B83 /* UIView+SetRect.m */,
+				533D6D301F63D5F500655B83 /* gifCell.h */,
+				533D6D311F63D5F500655B83 /* gifCell.m */,
+				533D6D321F63D5F500655B83 /* gifCell.xib */,
+				533D6D221F63D4E000655B83 /* Main.storyboard */,
+				533D6D251F63D4E000655B83 /* Assets.xcassets */,
+				533D6D271F63D4E000655B83 /* LaunchScreen.storyboard */,
+				533D6D2A1F63D4E000655B83 /* Info.plist */,
+				533D6D191F63D4E000655B83 /* Supporting Files */,
+			);
+			path = ImageGifAdd;
+			sourceTree = "<group>";
+		};
+		533D6D191F63D4E000655B83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				533D6D1A1F63D4E000655B83 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		533D6D3C1F65883800655B83 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				533D6D3D1F65883800655B83 /* GCD.h */,
+				533D6D3E1F65883800655B83 /* GCDGroup.h */,
+				533D6D3F1F65883800655B83 /* GCDGroup.m */,
+				533D6D401F65883800655B83 /* GCDQueue.h */,
+				533D6D411F65883800655B83 /* GCDQueue.m */,
+				533D6D421F65883800655B83 /* GCDSemaphore.h */,
+				533D6D431F65883800655B83 /* GCDSemaphore.m */,
+				533D6D441F65883800655B83 /* GCDTimer.h */,
+				533D6D451F65883800655B83 /* GCDTimer.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		533D6D501F6630D200655B83 /* LLGifView */ = {
+			isa = PBXGroup;
+			children = (
+				533D6D511F6630D200655B83 /* LLGifImageView.h */,
+				533D6D521F6630D200655B83 /* LLGifImageView.m */,
+				533D6D531F6630D200655B83 /* LLGifView.h */,
+				533D6D541F6630D200655B83 /* LLGifView.m */,
+			);
+			path = LLGifView;
+			sourceTree = "<group>";
+		};
+		99F77C3A7B2090FC08AC85AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAA1FA2B002EA64F9A0F65FE /* Pods-ImageGifAdd.debug.xcconfig */,
+				44C6B4FD11AB527615A01610 /* Pods-ImageGifAdd.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E4C81B4C23F11F1792D59978 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0CDAEA6244F9A9A3C285856 /* libPods-ImageGifAdd.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		533D6D151F63D4E000655B83 /* ImageGifAdd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 533D6D2D1F63D4E000655B83 /* Build configuration list for PBXNativeTarget "ImageGifAdd" */;
+			buildPhases = (
+				B3F0E9582D466ED34909353A /* [CP] Check Pods Manifest.lock */,
+				533D6D121F63D4E000655B83 /* Sources */,
+				533D6D131F63D4E000655B83 /* Frameworks */,
+				533D6D141F63D4E000655B83 /* Resources */,
+				BD42B35A35F0463442F84D2B /* [CP] Embed Pods Frameworks */,
+				B953A5810294713C7A58FAAA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageGifAdd;
+			productName = ImageGifAdd;
+			productReference = 533D6D161F63D4E000655B83 /* ImageGifAdd.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		533D6D0E1F63D4E000655B83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = wangjungang;
+				TargetAttributes = {
+					533D6D151F63D4E000655B83 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = NNWJGVKRJE;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 533D6D111F63D4E000655B83 /* Build configuration list for PBXProject "ImageGifAdd" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 533D6D0D1F63D4E000655B83;
+			productRefGroup = 533D6D171F63D4E000655B83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				533D6D151F63D4E000655B83 /* ImageGifAdd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		533D6D141F63D4E000655B83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533D6D291F63D4E000655B83 /* LaunchScreen.storyboard in Resources */,
+				533D6D591F6632C600655B83 /* 888.gif in Resources */,
+				533D6D261F63D4E000655B83 /* Assets.xcassets in Resources */,
+				533D6D5A1F6632C600655B83 /* example.gif in Resources */,
+				533D6D341F63D5F500655B83 /* gifCell.xib in Resources */,
+				533D6D241F63D4E000655B83 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3F0E9582D466ED34909353A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageGifAdd-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B953A5810294713C7A58FAAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageGifAdd/Pods-ImageGifAdd-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD42B35A35F0463442F84D2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageGifAdd/Pods-ImageGifAdd-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		533D6D121F63D4E000655B83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533D6D561F6630D200655B83 /* LLGifView.m in Sources */,
+				533D6D4B1F65883800655B83 /* GCDTimer.m in Sources */,
+				533D6D211F63D4E000655B83 /* ViewController.m in Sources */,
+				533D6D1E1F63D4E000655B83 /* AppDelegate.m in Sources */,
+				533D6D551F6630D200655B83 /* LLGifImageView.m in Sources */,
+				533D6D4C1F65883800655B83 /* UIView+SetRect.m in Sources */,
+				533D6D491F65883800655B83 /* GCDQueue.m in Sources */,
+				533D6D4F1F6589C500655B83 /* thirdViewController.m in Sources */,
+				533D6D4A1F65883800655B83 /* GCDSemaphore.m in Sources */,
+				533D6D331F63D5F500655B83 /* gifCell.m in Sources */,
+				533D6D1B1F63D4E000655B83 /* main.m in Sources */,
+				533D6D481F65883800655B83 /* GCDGroup.m in Sources */,
+				533D6D3B1F65865F00655B83 /* secondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		533D6D221F63D4E000655B83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				533D6D231F63D4E000655B83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		533D6D271F63D4E000655B83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				533D6D281F63D4E000655B83 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		533D6D2B1F63D4E000655B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		533D6D2C1F63D4E000655B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		533D6D2E1F63D4E000655B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAA1FA2B002EA64F9A0F65FE /* Pods-ImageGifAdd.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NNWJGVKRJE;
+				INFOPLIST_FILE = ImageGifAdd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangjungang.ImageGifAdd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		533D6D2F1F63D4E000655B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44C6B4FD11AB527615A01610 /* Pods-ImageGifAdd.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NNWJGVKRJE;
+				INFOPLIST_FILE = ImageGifAdd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangjungang.ImageGifAdd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		533D6D111F63D4E000655B83 /* Build configuration list for PBXProject "ImageGifAdd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533D6D2B1F63D4E000655B83 /* Debug */,
+				533D6D2C1F63D4E000655B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		533D6D2D1F63D4E000655B83 /* Build configuration list for PBXNativeTarget "ImageGifAdd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533D6D2E1F63D4E000655B83 /* Debug */,
+				533D6D2F1F63D4E000655B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 533D6D0E1F63D4E000655B83 /* Project object */;
+}

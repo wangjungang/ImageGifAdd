@@ -1,0 +1,79 @@
+//
+//  secondViewController.m
+//  ImageGifAdd
+//
+//  Created by 王俊钢 on 2017/9/10.
+//  Copyright © 2017年 wangjungang. All rights reserved.
+//
+
+#import "secondViewController.h"
+#import "FLAnimatedImage.h"
+#import "FLAnimatedImageView.h"
+#import "UIImageView+WebCache.h"
+#import "UIView+SetRect.h"
+#import "GCD.h"
+
+@interface secondViewController ()
+
+@end
+
+@implementation secondViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.layer.masksToBounds = YES;
+    
+    FLAnimatedImageView *gifImageView = [[FLAnimatedImageView alloc] init];
+    gifImageView.frame                = CGRectMake(0.0, 0.0, 100.0, 100.0);
+    [self.view addSubview:gifImageView];
+    
+    __weak secondViewController *wself = self;
+    NSString *imagePath                = @"http://images2015.cnblogs.com/blog/607542/201601/607542-20160123090832343-133952004.gif";
+    NSData   *gifImageData             = [self imageDataFromDiskCacheWithKey:imagePath];
+    if (gifImageData) {
+        [wself animatedImageView:gifImageView data:gifImageData];
+    } else {
+    
+        NSURL *url = [NSURL URLWithString:imagePath];
+        [[SDWebImageDownloader sharedDownloader] downloadImageWithURL:url
+                                                              options:0
+                                                             progress:nil
+                                                            completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
+                                                                [[[SDWebImageManager sharedManager] imageCache] storeImage:image imageData:data forKey:url.absoluteString toDisk:YES completion:^{
+                                                                    
+                                                                }];
+                                                                
+                                                                [[GCDQueue mainQueue] execute:^{
+                                                                    
+                                                                    [wself animatedImageView:gifImageView data:data];
+                                                                }];
+                                                            }];
+    }
+
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)animatedImageView:(FLAnimatedImageView *)imageView data:(NSData *)data {
+    
+    FLAnimatedImage *gifImage = [FLAnimatedImage animatedImageWithGIFData:data];
+   // imageView.frame           = CGRectMake(0, 0, gifImage.size.width, gifImage.size.height);
+    imageView.animatedImage   = gifImage;
+    imageView.alpha           = 0.f;
+    [UIView animateWithDuration:1.f animations:^{
+        imageView.alpha = 1.f;
+    }];
+}
+
+- (NSData *)imageDataFromDiskCacheWithKey:(NSString *)key {
+    
+    NSString *path = [[[SDWebImageManager sharedManager] imageCache] defaultCachePathForKey:key];
+    return [NSData dataWithContentsOfFile:path];
+}
+
+@end

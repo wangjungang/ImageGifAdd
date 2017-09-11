@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="190" id="KGk-i7-Jjw" customClass="gifCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="189.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nPb-CZ-FPK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nPb-CZ-FPK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2Mr-Qi-dRH"/>
+                    <constraint firstAttribute="bottom" secondItem="nPb-CZ-FPK" secondAttribute="bottom" constant="-0.5" id="8f5-PG-UUA"/>
+                    <constraint firstAttribute="trailing" secondItem="nPb-CZ-FPK" secondAttribute="trailing" id="8fZ-Hv-5e2"/>
+                    <constraint firstAttribute="trailing" secondItem="nPb-CZ-FPK" secondAttribute="trailing" id="BWG-Dk-ukP"/>
+                    <constraint firstItem="nPb-CZ-FPK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SSk-8f-eGa"/>
+                    <constraint firstAttribute="bottom" secondItem="nPb-CZ-FPK" secondAttribute="bottom" id="XdQ-Zf-dUH"/>
+                    <constraint firstItem="nPb-CZ-FPK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fBO-iO-UZ3"/>
+                    <constraint firstItem="nPb-CZ-FPK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sa1-v4-18Q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageGif" destination="nPb-CZ-FPK" id="q2t-Ts-lGR"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="123"/>
+        </tableViewCell>
+    </objects>
+</document>
